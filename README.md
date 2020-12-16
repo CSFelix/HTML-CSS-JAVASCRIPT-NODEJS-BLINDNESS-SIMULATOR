@@ -10,7 +10,7 @@
 
 * HTML, CSS, JavaScript, NodeJS;
 * Any Browser (tested succesfully in Google Chrome, Opera, Opera GX and Microsoft Edge;
-* Express, body-parser and color-blind installed with npm;
+* Express, Body-Parser and Color-Blind installed with npm;
 * JQuery and AnyJS libraries (both are in _assets_ folder).
 
 ----
