@@ -1,4 +1,4 @@
-# 🌟 ColorBlind Simulatoor 🌟
+# 🌟 ColorBlindness Simulator 🌟
 
 ----
 ### `❓ What's it? ❓`
