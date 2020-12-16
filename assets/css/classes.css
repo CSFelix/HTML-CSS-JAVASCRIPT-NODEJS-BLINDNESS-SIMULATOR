@@ -1,0 +1,134 @@
+/*
+	*****************************
+	*** Computer and Notebook ***
+	*****************************
+*/
+
+/*
+	*** Contents ***
+*/
+
+.subTopic { text-decoration: underline; text-decoration-color: var(--style-terciary-orange); }
+.refFieldSet { margin: 15px 0; padding: 20px; border-radius: 20px; font-size: 18px; }
+.refHr { width: 100%; background-color: var(--style-primary-orange); border: 2px solid var(--style-primary-orange); }
+p { text-align: center; }
+
+/*
+	*** Menu ***
+*/
+
+.neon {
+	border: 2px solid var(--style-terciary-orange);
+	box-shadow: 0px 0px 10px var(--style-primary-orange),
+				0px 0px 20px var(--style-primary-orange),
+				0px 0px 40px var(--style-primary-orange);
+}
+
+.navMenu { display: inline-block; }
+.navMenu ol { padding: 20px; border-radius: 5px; background: rgba(242, 170, 53, 0.15); }
+.navMenu ol a { color: var(--secondary-color); display: inline-block; }
+.navMenu ol a:hover { cursor: pointer; color: var(--style-secondary-orange); }
+.navMenu ol a li { padding-bottom: 5px; list-style: decimal inside; text-decoration: underline; }
+
+/*
+	*** Span in Subtopics ***
+*/
+
+.redNomaly { color: red; }
+.greenNomaly { color: limegreen; }
+.blueNomaly { color: lightskyblue; }
+.achromaNomaly { color: darkgray; }
+
+/*
+	*** Flex Sections: ***
+
+	- sectionColors       :    input color to change the color to view in each subtopic;
+	- sectionHexColors    :    fields with the colors in hexadecimal;
+	- simulatorColors     :    input color in simulator subtopic;
+	- subSimulatorColors  :    color divs in simulator subtopic;
+	- subSimulatorFields  :    tags about Blindness Types;
+*/
+
+/* Flex Configs */
+.sectionColors, 
+.sectionHexColors, 
+.simulatorColors { display: flex; justify-content: center;  align-items: center; }
+.subSimulatorColors, .subSimulatorFields { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+/* Flex Gaps */
+.sectionColors { gap: 5rem; }
+.sectionHexColors { gap: 5.30rem; }
+.simulatorColors { gap: 3rem; }
+.subSimulatorFields { gap: 2.75rem; }
+
+/* Layout Flex Container */
+.sectionHexColors .container {
+	border: 2px solid black; border-radius: 5px;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	padding: 3px;
+}
+
+/*
+	*** Fields ***
+*/
+
+#protanomalyOriginalField,
+#protanopiaOriginalField,
+#deuteranomalyOriginalField,
+#deuteranopiaOriginalField,
+#tritanomalyOriginalField,
+#tritanopiaOriginalField,
+#achromatomalyOriginalField,
+#achromatopsiaOriginalField:hover { cursor: pointer; }
+
+#protanomalyBlindnessField,
+#protanopiaBlindnessField,
+#deuteranomalyBlindnessField,
+#deuteranopiaBlindnessField,
+#tritanomalyBlindnessField,
+#tritanopiaBlindnessField,
+#achromatomalyBlindnessField,
+#achromatopsiaBlindnessField { background: rgba(204, 204, 204, 0.9); cursor: default; /* disabled effect */ }
+
+/*
+	*** Input Color Layout ***
+*/
+
+.originalColor, .blindnessColor { width: 75px; height: 75px; border-radius: 5px; border: 2px solid black; }
+.originalColor { -webkit-appearance: none; outline: none; }
+.originalColor:hover { cursor: pointer; }
+.originalColor::-webkit-color-swatch-wrapper { padding: 0; }
+.originalColor::-webkit-color-swatch { border: none; }
+.originalColor { background-color: #2bbf73; }
+
+/*
+	*** Simulator Divs ***
+*/
+
+#protanomalyColor, #simulatorProtanomaly { background-color: #83af6d; }
+#protanopiaColor, #simulatorProtanopia { background-color: #b6a66a; }
+#deuteranomalyColor, #simulatorDeuteranomaly { background-color: #8dab79; }
+#deuteranopiaColor, #simulatorDeuteranopia { background-color: #c59f7d; }
+#tritanomalyColor, #simulatorTritanomaly { background-color: #46b8a5; }
+#tritanopiaColor, #simulatorTritanopia { background-color: #56b4c2; }
+#achromatomalyColor, #simulatorAchromatomaly { background-color: #72a78c; }
+#achromatopsiaColor, #simulatorAchromatopsia { background-color: #9a9a9a; }
+
+/*
+	*** Simulator Subtopic Tag ***
+*/
+
+.tag {
+	padding: 5px; border-radius: 5px;
+	color: var(--primary-color);
+	background-color: var(--style-primary-orange);
+}
+
+/*
+	*************************
+	*** Mobile and Tablet ***
+	*************************
+*/
+
+@media screen and (max-width: 700px) { .refFieldSet legend { font-size: 25px; } }

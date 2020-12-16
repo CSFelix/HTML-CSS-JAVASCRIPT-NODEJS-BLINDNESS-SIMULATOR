@@ -1,0 +1,424 @@
+<!--
+Protanomaly     >>   sees low amounts of red
+Protanopia      >>   sees no red
+
+Deuteranomaly   >>   sees low amounts of green
+Deuteranopia    >>   sees no green
+
+Tritanomaly     >>   sees low amounts of blue
+Tritanopia      >>   sees no blue
+
+Achromatomaly   >>   sees absence of most color
+Achromatopsia   >>   sees no color at all
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Color Blindness Simulator</title>
+
+		<meta charset="utf-8">
+		<meta name="author" content="@CSFelix">
+		<meta name="keywords" content="html, css, js, node, nodejs, color, converter, blindness, color blindness simulator">
+		<meta name="description" content="Simple Color Blindness Simulator">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+		<!-- vars, reset, body and main content -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!-- classess and layouts -->
+		<link rel="stylesheet" type="text/css" href="assets/css/classes.css">
+
+		<!-- libraries -->
+		<link rel="stylesheet" type="text/css" href="assets/css/ani-collection.css">
+	</head>
+	
+	<body>
+		<section class="mainContent">
+			<div>
+				<fieldset class="refFieldSet">
+					<legend><code>🎨 Blindness Simulator 🎨</code></legend>
+
+					<center><h3 class="subTopic">📌 Topics 📌</h3></center>
+
+					<br><br>
+
+					<!-- 
+						************
+						*** menu ***
+						************
+					-->
+					<center>
+						<nav class="navMenu">
+							<ol class="neon">
+								<a href="#protanomaly"><li>Protanomaly</li></a><br>
+								<a href="#protanopia"><li>Protanopia</li></a><br>
+								<a href="#deuteranomaly"><li>Deuteranomaly</li></a><br>
+								<a href="#deuteranopia"><li>Deuteranopia</li></a><br>
+								<a href="#tritanomaly"><li>Tritanomaly</li></a><br>
+								<a href="#tritanopia"><li>Tritanopia</li></a><br>
+								<a href="#achromatomaly"><li>Achromatomaly</li></a><br>
+								<a href="#achromatopsia"><li>Achromatopsia</li></a><br>
+								<a href="#simulator"><li>Simulator</li></a><br>
+							</ol>
+						</nav>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						*******************
+						*** Protanomaly ***
+						*******************
+					-->
+
+					<center>
+						<h3 id="protanomaly" class="subTopic">Protanomaly</h3>
+
+						<br><br>
+
+						<p>The peoples see low amounts of <span class="redNomaly">red</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color" id="protanomalyOriginalColor" 
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="protanomalyColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="protanomalyOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="protanomalyBlindnessField" class="container">#83af6d</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						******************
+						*** Protanopia ***
+						******************
+					-->
+
+					<center>
+						<h3 id="protanopia" class="subTopic">Protanopia</h3>
+
+						<br><br>
+
+						<p>The peoples don't see <span class="redNomaly">red</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="protanopiaOriginalColor"
+									class="originalColor" value="#2bbf73">
+							<div>>></div>
+							<div id="protanopiaColor" class="blindnessColor" data-anijs="if: click, do: rubberBand animated"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="protanopiaOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="protanopiaBlindnessField" class="container">#b6a66a</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						********************* 
+						*** Deuteranomaly ***
+						*********************
+					-->
+
+					<center>
+						<h3 id="deuteranomaly" class="subTopic">Deuteranomaly</h3>
+
+						<br><br>
+
+						<p>The peoples see low amounts of <span class="greenNomaly">green</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="deuteranomalyOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="deuteranomalyColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="deuteranomalyOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="deuteranomalyBlindnessField" class="container">#8dab79</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						******************** 
+						*** Deuteranopia ***
+						********************
+					-->
+
+					<center>
+						<h3 id="deuteranopia" class="subTopic">Deuteranopia</h3>
+
+						<br><br>
+
+						<p>The peoples don't see <span class="greenNomaly">green</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="deuteranopiaOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="deuteranopiaColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="deuteranopiaOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="deuteranopiaBlindnessField" class="container">#c59f7d</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						*******************
+						*** Tritanomaly ***
+						*******************
+					-->
+
+					<center>
+						<h3 id="tritanomaly" class="subTopic">Tritanomaly</h3>
+
+						<br><br>
+
+						<p>The peoples see low amounts of <span class="blueNomaly">blue</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="tritanomalyOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="tritanomalyColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="tritanomalyOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="tritanomalyBlindnessField" class="container">#46b8a5</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						******************
+						*** Tritanopia ***
+						******************
+					-->
+
+					<center>
+						<h3 id="tritanopia" class="subTopic">Tritanopia</h3>
+
+						<br><br>
+
+						<p>The peoples don't see <span class="blueNomaly">blue</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="tritanopiaOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="tritanopiaColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="tritanopiaOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="tritanopiaBlindnessField" class="container">#56b4c2</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						*********************
+						*** Achromatomaly ***
+						*********************
+					-->
+
+					<center>
+						<h3 id="achromatomaly" class="subTopic">Achromatomaly</h3>
+
+						<br><br>
+
+						<p>The peoples see absence of most <span class="achromaNomaly">color</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color"  id="achromatomalyOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="achromatomalyColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="achromatomalyOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="achromatomalyBlindnessField" class="container">#72a78c</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						*********************
+						*** Achromatopsia ***
+						*********************
+					-->
+
+					<center>
+						<h3 id="achromatopsia" class="subTopic">Achromatopsia</h3>
+
+						<br><br>
+
+						<p>The peoples see no <span class="achromaNomaly">color at all</span>.</p>
+
+						<br><br>
+
+						<section class="sectionColors">
+							<input type="color" id="achromatopsiaOriginalColor"
+									class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<div>>></div>
+							<div id="achromatopsiaColor" class="blindnessColor"></div>
+						</section>
+
+						<br>
+
+						<section class="sectionHexColors">
+							<p id="achromatopsiaOriginalField" class="container" data-anijs="if: click, do: rubberBand animated">#2bbf73</p>
+							<p>>></p>
+							<p id="achromatopsiaBlindnessField" class="container">#9a9a9a</p>
+						</section>
+
+						<br><br>
+					</center>
+
+					<br><br>
+					<hr class="refHr">
+					<br><br>
+
+					<!--
+						***************** 
+						*** Simulator ***
+						*****************
+					-->
+
+					<center>
+						<h3 id="simulator" class="subTopic">🎨 Simulator 🎨</h3>
+
+						<br><br>
+
+						<section class="simulatorColors">
+							<input type="color" id="simulatorOriginalColor" class="originalColor" value="#2bbf73" data-anijs="if: click, do: rubberBand animated">
+							<p>>></p>
+
+							<div class="simulatorColors">
+								
+								<section class="subSimulatorColors">
+									<div id="simulatorProtanomaly" class="blindnessColor"></div>
+									<div id="simulatorProtanopia" class="blindnessColor"></div>
+									<div id="simulatorDeuteranomaly" class="blindnessColor"></div>
+									<div id="simulatorDeuteranopia" class="blindnessColor"></div>
+									<div id="simulatorTritanomaly" class="blindnessColor"></div>
+									<div id="simulatorTritanopia" class="blindnessColor"></div>
+									<div id="simulatorAchromatomaly" class="blindnessColor"></div>
+									<div id="simulatorAchromatopsia" class="blindnessColor"></div>
+								</section>
+
+								<section class="subSimulatorFields">
+									<p class="tag">Protanomaly</p>
+									<p class="tag">Protanopia</p>
+									<p class="tag">Deuteranomaly</p>
+									<p class="tag">Deuteranopia</p>
+									<p class="tag">Tritanomaly</p>
+									<p class="tag">Tritanopia</p>
+									<p class="tag">Achromatomaly</p>
+									<p class="tag">Achromatopsia</p>
+								</section>
+
+							</div>
+						</section>
+
+						<br><br>
+					</center>
+				</fieldset>
+			</div>
+		</section>
+	</body>
+
+	<!-- libraries -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/ani-min.js"></script>
+
+	<!-- simulator controls and methods -->
+	<script type="text/javascript" src="assets/js/inputColorActive.js"></script>
+	<script type="text/javascript" src="assets/js/simulatorOneType.js"></script>
+	<script type="text/javascript" src="assets/js/simulatorAllTypes.js"></script>
+</html>
